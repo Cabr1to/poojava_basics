@@ -5,10 +5,12 @@ public class Celular {
     float tela;
     int bateria;
     
-    boolean ligar(){
+    void ligar(){
         if (bateria > 0){
-            return true;
+            System.out.format(" Liga\n %d", bateria);
+        }else{
+            System.out.format(" Celular desligado\n %d", bateria);
         }
-        return false;
+        
     }
 }
