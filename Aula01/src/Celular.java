@@ -3,5 +3,12 @@ public class Celular {
     String sysO;
     int armazenamento;
     float tela;
+    int bateria;
     
+    boolean ligar(){
+        if (bateria > 0){
+            return true;
+        }
+        return false;
+    }
 }
