@@ -2,7 +2,8 @@ import classes.*;
 
 public class App {
     public static void main(String[] args) throws Exception {
-        Pessoa pessoa = new Pessoa();
+        Personagem guerreiro = new Personagem("Taurus", "guerreiro");
+        guerreiro.status();
     
     }
 }

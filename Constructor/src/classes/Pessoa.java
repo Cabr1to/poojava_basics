@@ -6,16 +6,16 @@ public class Pessoa{
     private int idade;
     private float altura;
 
-    public Pessoa(){
-        nome = "Luis";
-        idade = 185;
-        altura = 1.2f;
+    public Pessoa(String nome, int idade, float altura){
+        this.nome = nome;
+        this.idade = idade;
+        this.altura = altura;
         imprimirDados();
     }
 
     private void imprimirDados(){
         System.out.format(
-            "Nome: %s\n Idade: %d\n Altura: %.2fm\n",
+            "\nNome: %s\nIdade: %d\nAltura: %.2fm\n",
             nome,
             idade,
             altura
