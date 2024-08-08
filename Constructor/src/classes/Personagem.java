@@ -1,5 +1,7 @@
 package classes;
 
+import javax.swing.JOptionPane;
+
 public class Personagem {
     // atributos
     private String nome;
@@ -23,12 +25,13 @@ public class Personagem {
     }
 
     public void status(){
-        System.out.format("Nome: %s\nNivel: %d\nVida: %d\nClasse: %s\nForca: %d",
-        nome,
-        nivel,
-        vida,
-        classe,
-        forca);
+        String status = String.format("Nome: %s\nNivel: %d\nVida: %d\nClasse: %s\nForca: %d",
+            nome,
+            nivel,
+            vida,
+            classe,
+            forca);
+        JOptionPane.showMessageDialog(null, status, "Status do Personagem", JOptionPane.INFORMATION_MESSAGE);
     }
 
     // metodos especificos

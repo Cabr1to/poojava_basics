@@ -1,8 +1,13 @@
+import javax.swing.JOptionPane;
+
 import classes.*;
 
 public class App {
     public static void main(String[] args) throws Exception {
-        Personagem guerreiro = new Personagem("Taurus", "guerreiro");
+        String nome = JOptionPane.showInputDialog(null, "Nome do personagem: ");
+        String classe = JOptionPane.showInputDialog(null, "Classe do personagem: ");
+
+        Personagem guerreiro = new Personagem(nome, classe);
         guerreiro.status();
     
     }
